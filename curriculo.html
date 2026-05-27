@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Roberto Alves - Currículo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Resets básicos e configurações globais */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: #dbe1e6; /* Fundo simulando o visualizador de PDF */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            padding: 30px 0;
+        }
+
+        /* Container simulando a folha A4 */
+        .page {
+            max-width: 1100px; /* Permite ocupar mais espaço horizontal na tela */
+            width: 95%; /* Adapta melhor em monitores diferentes */
+            min-height: 297mm;
+            margin: 0 auto;
+            background-color: #f4f6f8;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* A FAIXA BRANCA NO TOPO (Acima de tudo) */
+        .top-band {
+            width: 100%;
+            height: 35px;
+            background-color: #ffffff;
+        }
+
+        /* Envolve as colunas para que estiquem juntas até o final */
+        .content-wrapper {
+            display: flex;
+            flex: 1; /* Faz esse bloco ocupar todo o restante da altura da página */
+            align-items: stretch;
+        }
+
+        /* --- BARRA LATERAL --- */
+        .sidebar {
+            width: 27%; /* Reduzido para dar mais espaço ao conteúdo principal */
+            background-color: #2b3a4a;
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4a5a6a;
+            display: block;
+            margin: 0 auto 30px auto;
+            object-fit: cover;
+        }
+
+        .sidebar h3 {
+            border-bottom: 1px solid #4a5a6a;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+
+        .sidebar ul li { margin-bottom: 10px; }
+        
+        /* Ícones de Contato */
+        .sidebar ul i {
+            width: 20px;
+            text-align: center;
+            margin-right: 10px;
+            color: #8da3b8; /* Cor azul suave que combina com o fundo */
+        }
+
+        .sidebar a {
+            color: #e0e6ed;
+            text-decoration: none;
+        }
+        .sidebar a:hover { text-decoration: underline; }
+
+        /* --- CORPO PRINCIPAL --- */
+        .main {
+            width: 73%; /* Expandido para aproveitar a largura */
+            padding: 40px 50px; /* Um pouco mais de respiro interno */
+            background-color: #f4f6f8;
+        }
+
+        .main h1 {
+            font-size: 2.8em;
+            color: #2b3a4a;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.05em;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+
+        .subtitle span {
+            font-weight: normal;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* --- CARDS MODULARES --- */
+        .card {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            margin-bottom: 25px;
+            border: 1px solid #eaeaea;
+            break-inside: avoid; /* Evita que o card corte no meio ao trocar de página */
+        }
+
+        .card h2 {
+            color: #2b3a4a;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .item { margin-bottom: 20px; }
+        .item:last-child { margin-bottom: 0; }
+
+        .item h4 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        .item .meta {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .item p, .item ul {
+            line-height: 1.6;
+            color: #444;
+            font-size: 0.95em;
+        }
+        .item ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .item ul li { margin-bottom: 5px; }
+
+        /* --- CONFIGURAÇÕES DO PDF --- */
+        @media print {
+            @page { margin: 0; size: A4; }
+            body {
+                padding: 0;
+                background-color: #ffffff;
+            }
+            .page {
+                box-shadow: none !important;
+                width: 100% !important;
+                max-width: 100% !important; /* Força a ocupar toda a largura do PDF ao imprimir */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <!-- Faixa branca no topo de ponta a ponta -->
+    <div class="top-band"></div>
+
+    <div class="content-wrapper">
+        <!-- Barra Lateral -->
+        <div class="sidebar">
+            <img src="https://github.com/estathidev.png" alt="Foto de Perfil Thiago Roberto Alves">
+            
+            <h3>Contato</h3>
+            <ul>
+                <li><a href="mailto:nevoheiro@gmail.com"><i class="fas fa-envelope"></i>nevoheiro@gmail.com</a></li>
+                <li><a href="https://linkedin.com/in/thiago-roberto-alves"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/estathidev"><i class="fab fa-github"></i>GitHub</a></li>
+                <li><a href="http://lattes.cnpq.br/2001001221526570"><i class="fas fa-graduation-cap"></i>Lattes</a></li>
+            </ul>
+
+            <h3>Competências</h3>
+            <ul>
+                <li>Automação de Planilhas e Processos</li>
+                <li>Análise e Modelagem de Dados</li>
+                <li>Pesquisa Científica</li>
+                <li>Gestão de Fluxos e Tarefas</li>
+            </ul>
+
+            <h3>Habilidades Técnicas</h3>
+            <ul>
+                <li><strong>Linguagens:</strong><br>R, SQL, JavaScript, Python</li>
+                <li><strong>SQL Avançado:</strong><br>CTEs, Views, Window Functions</li>
+                <li><strong>Estatística:</strong><br>EDA, Probabilidade, Modelagem</li>
+                <li><strong>Ferramentas:</strong><br>Linux, Git, Google Workspace</li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="main">
+            <h1>Thiago Roberto Alves</h1>
+            <div class="subtitle">
+                Estatística e Ciência de Dados (UFPR) | Automação de Processos | SQL, R, Shiny, Google Apps Script<br>
+                <span>Curitiba, Paraná, Brasil</span>
+            </div>
+
+            <!-- Card 1: Resumo -->
+            <div class="card">
+                <h2>Resumo</h2>
+                <div class="item">
+                    <p style="margin-bottom: 10px;">Estudante de Estatística e Ciência de Dados na Universidade Federal do Paraná (UFPR), possuo forte rigor analítico e compreensão matemática profunda aplicada à resolução de problemas complexos. Tenho experiência prática em modelagem quantitativa, análise exploratória e projetos de dados voltados para a área de saúde mental.</p>
+                    <p style="margin-bottom: 10px;">Utilizo meu embasamento teórico estatístico para desenvolver soluções robustas, extraindo valor dos dados através de ferramentas como <strong>R (Shiny, tidyverse)</strong>, <strong>SQL avançado</strong> (CTEs, Views, Window Functions) e <strong>JavaScript / Google Apps Script</strong>. Aliado a isso, destaco vasta experiência na modelagem e criação de planilhas automatizadas para gestão financeira e otimização de fluxos organizacionais.</p>
+                    <p>Meu objetivo é unir métodos quantitativos e programação para transformar informações brutas em inteligência acionável. Busco oportunidades de estágio em Ciência de Dados e Análise Avançada, onde possa agregar valor técnico no apoio à tomada de decisão.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Experiência -->
+            <div class="card">
+                <h2>Experiência</h2>
+                
+                <div class="item">
+                    <h4>Solution IPD</h4>
+                    <div class="meta">Estagiário de Estatística | Março de 2026 – Presente</div>
+                    <ul>
+                        <li>Atuação no suporte analítico e aplicação de métodos estatísticos para demandas internas e de clientes.</li>
+                        <li>Manipulação, tratamento e modelagem de dados utilizando ferramentas estatísticas e linguagens de programação.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h4>Universidade Federal do Paraná</h4>
+                    <div class="meta">Integrante do PET Estatística | Novembro de 2025 – Presente</div>
+                    <ul>
+                        <li>Participação no Programa de Educação Tutorial (PET) do curso de Estatística da UFPR, envolvendo atividades de ensino, pesquisa e extensão.</li>
+                        <li>Atuação em projetos colaborativos, organização de atividades acadêmicas e desenvolvimento de habilidades analíticas.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h4>Sameca – Saúde Mental Camarada</h4>
+                    <div class="meta">Coordenador de Dados | Janeiro de 2023 – Presente</div>
+                    <ul>
+                        <li>Desenvolvimento de automações utilizando Google Apps Script e JavaScript para integração de fluxos (Google Forms e Sheets).</li>
+                        <li>Criação de relatórios analíticos para apoio à tomada de decisão em equipes multidisciplinares em ambiente remoto.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h4>Iniciação Científica em Física e Meteorologia – UFPR</h4>
+                    <div class="meta">Pesquisador Acadêmico | 2006 – 2007</div>
+                    <ul>
+                        <li>Análise objetiva de dados meteorológicos para identificar padrões na relação interdecadal de precipitação.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3: Formação -->
+            <div class="card">
+                <h2>Formação Acadêmica</h2>
+                
+                <div class="item">
+                    <h4>Universidade Federal do Paraná</h4>
+                    <div class="meta">Bacharelado, Estatística e Ciência de Dados (Jan de 2025 – Dez de 2028)</div>
+                </div>
+
+                <div class="item">
+                    <h4>Universidade Federal do Paraná</h4>
+                    <div class="meta">Bacharelado, Física (Incompleto) (2005 – 2009)</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

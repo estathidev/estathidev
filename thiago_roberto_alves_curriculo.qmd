@@ -1,0 +1,167 @@
+---
+format:
+  html:
+    theme: litera
+    toc: false
+---
+
+```{=html}
+<style>
+  /* Estilização para replicar a estética do LinkedIn na versão HTML */
+  body { background-color: #e9ecef; }
+  .columns {
+    display: flex;
+    background: #f4f6f8; /* Fundo cinza claro para contrastar com os cards */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 20px auto;
+    align-items: stretch; /* Garante que a barra lateral vá até o final */
+  }
+  .column:nth-child(1) {
+    background-color: #2b3a4a; /* Cor lateral do LinkedIn */
+    color: white;
+    padding: 30px 20px;
+  }
+  .column:nth-child(1) h3 {
+    color: white;
+    border-bottom: 1px solid #4a5a6a;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
+  .column:nth-child(1) a {
+    color: #e0e6ed;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .column:nth-child(3) {
+    padding: 40px;
+  }
+  .column:nth-child(3) h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: #2b3a4a;
+  }
+
+  /* Modularização: Criando os "Cards" com sombreamento para cada seção */
+  .level2 {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    margin-bottom: 25px;
+    border: 1px solid #eaeaea;
+  }
+  .level2 h2 {
+    color: #2b3a4a;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+  }
+  
+  /* Otimizações para gerar o PDF perfeito ao imprimir via Navegador */
+  @media print {
+    @page { margin: 0; }
+    body { background-color: white; padding: 0; margin: 0; }
+    .columns {
+      box-shadow: none;
+      margin: 0;
+      max-width: 100%;
+      border-radius: 0;
+      min-height: 100vh; /* Força o container a ocupar a página toda */
+      background-color: #f4f6f8 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .column:nth-child(1) {
+      background-color: #2b3a4a !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .level2 {
+      background: #ffffff !important;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06) !important;
+      border: 1px solid #eaeaea !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      break-inside: avoid; /* Evita que o card seja cortado no meio da página */
+    }
+  }
+</style>
+```
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](fodo_de_perfil.jpg){fig-align="center" width="160px" style="border-radius: 50%; border: 3px solid #4a5a6a; margin-bottom: 20px;"}
+
+### Contato
+[nevoheiro@gmail.com](mailto:nevoheiro@gmail.com)  
+[LinkedIn](https://linkedin.com/in/thiago-roberto-alves)  
+[GitHub](https://github.com/estathidev)  
+[Lattes](http://lattes.cnpq.br/2001001221526570)
+
+### Principais Competências
+- SQL
+- Pesquisa
+- Programação (computação)
+- Automação de Processos
+
+### Habilidades Técnicas
+- **Linguagens:** R, SQL, JavaScript, Python
+- **Estatística:** EDA, Probabilidade, Modelagem
+- **Ferramentas:** Linux, Git, Google Workspace
+:::
+
+::: {.column width="5%"}
+<!-- Espaçamento -->
+:::
+
+::: {.column width="65%"}
+# Thiago Roberto Alves
+**Estatística e Ciência de Dados (UFPR) | Automação de Processos | SQL, R, Shiny, Google Apps Script**  
+*Curitiba, Paraná, Brasil*
+
+## Resumo
+Sou estudante de Estatística e Ciência de Dados na Universidade Federal do Paraná (UFPR), com experiência prática em automação de processos, análise e visualização de dados, incluindo projetos na área de saúde mental.
+
+Atuo no desenvolvimento de soluções utilizando R (tidyverse, Shiny, Quarto), Google Apps Script e JavaScript, com foco em integração de dados, criação de dashboards interativos e otimização de fluxos de trabalho.
+
+Busco oportunidades de estágio nas áreas de Estatística, Ciência de Dados e Análise de Dados, onde possa aplicar métodos estatísticos, programação e visualização para resolver problemas reais.
+
+## Experiência
+
+**Solution IPD**  
+*Estagiário de Estatística* | Março de 2026 – Presente  
+- Atuação no suporte analítico e aplicação de métodos estatísticos para demandas internas e de clientes.
+- Manipulação, tratamento e modelagem de dados utilizando ferramentas estatísticas e linguagens de programação.
+
+**Universidade Federal do Paraná**  
+*Integrante do PET Estatística* | Novembro de 2025 – Presente  
+- Participação no Programa de Educação Tutorial (PET) do curso de Estatística da UFPR, envolvendo atividades de ensino, pesquisa e extensão.
+- Atuação em projetos colaborativos, organização de atividades acadêmicas e desenvolvimento de habilidades analíticas.
+
+**Sameca – Saúde Mental Camarada**  
+*Coordenador de Dados* | Janeiro de 2023 – Presente  
+- Desenvolvimento de automações utilizando Google Apps Script e JavaScript para integração de fluxos (Google Forms e Sheets).
+- Criação de relatórios analíticos para apoio à tomada de decisão em equipes multidisciplinares em ambiente remoto.
+
+**Iniciação Científica em Física e Meteorologia – UFPR**  
+*Pesquisador Acadêmico* | 2006 – 2007  
+- Análise objetiva de dados meteorológicos para identificar padrões na relação interdecadal de precipitação.
+
+## Formação Acadêmica
+
+**Universidade Federal do Paraná**  
+*Bacharelado, Estatística e Ciência de Dados* (Jan de 2025 – Dez de 2028)
+
+**Universidade Federal do Paraná**  
+*Bacharelado, Física (Incompleto)* (2005 – 2009)
+:::
+
+::::
