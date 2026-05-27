@@ -1,24 +1,29 @@
-<h1 align="center">Opa, eu sou o Thiago Roberto Alves 👋</h1>
+<h1 align="center">Thiago Roberto Alves</h1>
 
-<h3 align="center">📊 Estatístico e Cientista de Dados em formação | ⚙️ Automação de Processos</h3>
+<h3 align="center">Estatística e Ciência de Dados | Automação de Processos</h3>
 
 <p align="center">
-  Sou um estudante de Estatística e Ciência de Dados na UFPR, apaixonado por transformar dados brutos em inteligência acionável e automatizar fluxos de trabalho. Possuo um forte rigor matemático e adoro resolver problemas complexos através de programação e modelagem quantitativa.
+  Estudante de Estatística e Ciência de Dados na Universidade Federal do Paraná (UFPR). Atuo na transformação de dados brutos em inteligência acionável e na automação de fluxos de trabalho. Possuo forte rigor analítico e foco na resolução de problemas complexos por meio de programação e modelagem quantitativa.
+</p>
+
+<p align="center">
+  <a href="https://estathidev.github.io/estathidev/curriculo.html" target="_blank">
+    <img src="https://img.shields.io/badge/-Visualizar_Currículo-2b3a4a?style=for-the-badge&logo=Read-the-Docs&logoColor=white" alt="Visualizar Currículo">
+  </a>
 </p>
 
 ---
 
-### 👨‍💻 Sobre mim
+### 📌 Perfil Profissional
 
-- 🔭 **Atualmente trabalhando com:** Automação de dados e construção de dashboards interativos.
-- 🌱 **Aprofundando estudos em:** Modelagem Matemática, Estatística Avançada e Machine Learning.
-- 💼 **Experiência prática em:** R (Shiny, tidyverse), SQL avançado (CTEs, Window Functions), JavaScript e Google Apps Script.
-- 💬 **Pergunte-me sobre:** Análise Exploratória (EDA), automação de planilhas e fluxos de trabalho.
-- 📫 **Como me encontrar:** [LinkedIn](https://linkedin.com/in/thiago-roberto-alves) ou [nevoheiro@gmail.com](mailto:nevoheiro@gmail.com)
+- **Foco de Atuação:** Automação de dados e construção de soluções analíticas.
+- **Aprimoramento Contínuo:** Modelagem Matemática, Estatística Avançada e Machine Learning.
+- **Experiência Técnica:** R (Shiny, tidyverse), SQL Avançado (CTEs, Window Functions), JavaScript e Google Apps Script.
+- **Contato:** [LinkedIn](https://linkedin.com/in/thiago-roberto-alves) | [nevoheiro@gmail.com](mailto:nevoheiro@gmail.com)
 
 ---
 
-### 🛠️ Habilidades e Ferramentas
+### 🛠️ Competências e Tecnologias
 
 <p align="center">
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R" />
@@ -31,7 +36,7 @@
 
 ---
 
-### 📈 Minhas Estatísticas
+### 📈 Métricas do GitHub
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=estathidev&show_icons=true&theme=nord&hide_border=true" alt="Estatísticas do estathidev" />
