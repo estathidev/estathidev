@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://estathidev.github.io/estathidev/curriculo.pdf" target="_blank">
+  <a href="curriculo.pdf" target="_blank">
     <img src="https://img.shields.io/badge/-Visualizar_Currículo-2b3a4a?style=for-the-badge&logo=Read-the-Docs&logoColor=white" alt="Visualizar Currículo">
   </a>
 </p>
